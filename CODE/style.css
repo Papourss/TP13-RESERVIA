@@ -101,9 +101,17 @@ header {
 
 /* Main Section Recherche */
 
-/**/
+/*Filtres*/
+.filtres{
+    display: flex;
+}
 
-/**/
+.categorie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Filtres*/
 
 /**/
 
