@@ -120,24 +120,27 @@ header {
     justify-content: space-between;
     align-items: center;
     border: 2px solid rgb(255, 231, 231);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius:25px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-radius: 50px;
 
+}
+
+.categorie article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 234, 255);
+    padding: 15px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -2px;
 }
 
 .categorie article div i{
     color: rgb(0, 110, 255);
 }
 
-.categorie article div{
-    align-self: center;
-    justify-self: center;
-    background-color: rgb(223, 234, 255);
-    padding: 15px;
-    border-radius: 50%;
-}
 
 .categorie article span{
     font-weight: bold;
@@ -145,9 +148,10 @@ header {
 }
 /*Filtres*/
 
-/**/
+/*Info*/
 
-/**/
+
+/*Info*/
 
 /**/
 
