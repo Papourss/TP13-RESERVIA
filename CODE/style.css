@@ -174,6 +174,34 @@ header {
     color: rgb(0, 110, 255);
 }
 /*Info*/
-/**/
+/*Hebergement Marseille*/
+.proposition{
+    display: flex;
+    flex-direction: row;
+}
 
+.HebergMars{
+    width: 75%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 25px;
+}
+
+.PlusPop{
+    width: 25%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 25px;
+    margin: 0px 0px 0px 30px;
+}
+
+.propliens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.propliens a img{
+    width: 50px;
+}
+
+
+/*Hebergement Marseille*/
 /**/
