@@ -1,5 +1,5 @@
 body {
-    margin: 0px 50px 0px 50px;
+    margin: 0px 20px 0px 20px;
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway";
@@ -175,19 +175,24 @@ header {
 }
 /*Info*/
 /*Hebergement Marseille*/
+.HebergMars header{
+    padding: 10px 10px 10px 20px;
+}
+
 .proposition{
     display: flex;
     flex-direction: row;
 }
 
 .HebergMars{
-    width: 75%;
+    position: relative;
+    width: 70%;
     background-color: rgb(242, 242, 242);
     border-radius: 25px;
 }
 
 .PlusPop{
-    width: 25%;
+    width: 30%;
     background-color: rgb(242, 242, 242);
     border-radius: 25px;
     margin: 0px 0px 0px 30px;
@@ -195,13 +200,100 @@ header {
 
 .propliens{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 40%);
+    row-gap: 20px; 
+}
+
+.propliens a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px; 
+    margin: 0px 10px 0px 10px;  
+    height: 100%;
 }
 
 .propliens a img{
-    width: 50px;
+    margin: 4% 0px 0px 0px; 
+    width: 92%;
+    height: 50%; 
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.propliens a div{
+    color: black;
+    text-decoration: none;
+    height: 50%;
+    background-color: white;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 10px;
+    font-size: 0.8em;
 }
 
 
+.fa-star {
+    color: rgb(202, 202, 202);
+}
+
+.checked {
+    color: rgb(0, 110, 255);
+  }
+
+.AfficherPlus{
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    bottom: 8%;
+    left: 4%;
+}
+
 /*Hebergement Marseille*/
-/**/
+
+/*Les plus populaires*/
+.PlusPop header{
+    padding: 10px 10px 10px 20px;
+}
+
+.pop{
+    display: flex;
+    background-color: white;
+    margin: 0px 20px 20px 20px;  
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    height: 300px;
+}
+
+.pop img{
+    margin: 3% 0px 3% 3%; 
+    width: 30%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.infopop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    margin: 10px;
+}
+
+.infopop h3{
+    font-size: 1.2em;
+    margin: 0px 0px -10px 0px;
+}
+/*Les plus populaires*/
