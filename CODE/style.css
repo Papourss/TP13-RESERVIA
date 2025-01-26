@@ -297,3 +297,50 @@ header {
     margin: 0px 0px -10px 0px;
 }
 /*Les plus populaires*/
+
+/*Activites*/
+.activitesphotos{
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas:
+    "activite1 activite2 activite4 activite5"
+    "activite1 activite3 activite4 activite6";
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* .act1, .act2, .act3, .act4, .act5, .act6{
+    object-fit: cover;
+} */
+
+.act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.act1{
+    grid-area: activite1;
+}
+
+.act2{
+    grid-area: activite2;
+}
+
+.act3{
+    grid-area: activite3;
+}
+
+.act4{
+    grid-area: activite4;
+}
+
+.act5{
+    grid-area: activite5;
+}
+
+.act6{
+    grid-area: activite6;
+}
+/*Activites*/
