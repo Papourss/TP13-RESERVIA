@@ -1,0 +1,530 @@
+body {
+    margin: 0px 10% 0px 10%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    grid-template-areas:
+        "logo . hosting activities register";
+    align-items: center;
+}
+
+#logo {
+    grid-area: logo;
+    height: 70px;
+}
+
+#heb{
+    grid-area:hosting;
+}
+
+#act{
+    grid-area: activities;
+}
+
+#inscrire {
+    grid-area: register;
+    text-decoration: none; 
+    color: rgb(0, 110, 255);
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 1rem; 
+    font-family: Arial, sans-serif;
+    padding: 2em;
+    border-top: 3px solid white;
+    text-align: center;
+}
+
+header a:hover{ 
+    color: rgb(0, 110, 255);
+    text-shadow: 0 0 0.5px rgb(0, 110, 255);
+    border-top: 3px solid rgb(0, 110, 255) ;
+}
+
+@media only screen and (max-width: 630px) {
+    header {
+        width: 100%;
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+                "logo register  " 
+            "hosting activities";
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+/* Header */
+
+/* Main Section Recherche */
+.recherche h1 {
+    font-size: 2rem;
+}
+
+.formulaire{
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+.SearchIcon{
+    background-color: rgb(233, 233, 233);
+    height: 115%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchIconIcon{
+    height: 50%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 0px 15px 0px 15px;
+}
+
+
+#recherche{
+    height:100%;
+    width: 200px;
+    border: 0px solid rgb(218, 218, 218);
+    border-top: 2px solid rgb(218, 218, 218);
+    border-bottom: 2px solid rgb(218, 218, 218);
+    font-weight: bold;
+    color: rgb(168, 168, 168);
+}
+
+.SearchBouton{
+    background-color: rgb(0, 110, 255);
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 115%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0px 15px 0px 15px;
+}
+
+/* Main Section Recherche */
+
+/*Filtres*/
+.filtres{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .filtres{
+        flex-wrap: wrap;
+    }
+
+    .categorie{
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+
+.categorie{
+    display: flex;
+    padding: 0px 0px 0px 20px;
+}
+
+.categorie article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(255, 231, 231);
+    border-radius: 50px;
+    margin: 0px 0px 0px 20px;
+}
+
+.categorie article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 234, 255);
+    padding: 15px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: -2px;
+}
+
+.categorie article:hover{
+    color: rgb(0, 110, 255);
+}
+
+.categorie article div i{
+    color: rgb(0, 110, 255);
+}
+
+
+.categorie article span{
+    font-weight: bold;
+    padding: 10px;
+}
+/*Filtres*/
+
+/*Info*/
+.info{
+    display: flex;
+    direction: row ;
+    align-items: center;
+}
+
+.iconInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border: 2px solid rgb(255, 231, 231);
+    border-radius: 50px;
+    margin: 0px 5px 0px 0px;
+}
+
+.iconInfo i{
+    color: rgb(0, 110, 255);
+}
+/*Info*/
+/*Hebergement Marseille*/
+
+.HebergMars header{
+    padding: 10px 10px 10px 20px;
+}
+
+.proposition{
+    display: flex;
+    flex-direction: row;
+}
+
+.HebergMars{
+    position: relative;
+    width: 70%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 25px;
+}
+
+.PlusPop{
+    width: 30%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 25px;
+    margin: 0px 0px 0px 30px;
+}
+
+.propliens{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 40%);
+    row-gap: 20px;
+}
+
+.propliens a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px; 
+    margin: 0px 10px 0px 10px;  
+    max-height: 100%;
+}
+
+.propliens a img{
+    margin: 4% 0px 0px 0px; 
+    width: 92%;
+    height: 50%; 
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.propliens a div{
+    color: black;
+    text-decoration: none;
+    height: 50%;
+    background-color: white;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+
+.fa-star {
+    color: rgb(202, 202, 202);
+}
+
+.checked {
+    color: rgb(0, 110, 255);
+  }
+
+.AfficherPlus{
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    bottom: 20px;
+    left: 30px;
+}
+/*Hebergement Marseille*/
+
+/*Les plus populaires*/
+.PlusPop header{
+    padding: 10px 10px 10px 20px;
+}
+
+.pop{
+    display: flex;
+    background-color: white;
+    margin: 0px 20px 20px 20px;  
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    height: 300px;
+}
+
+ .pop img{
+    margin: 3% 0px 3% 3%; 
+    width: 70%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+
+
+.infopop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    margin: 10px;
+}
+
+.infopop h3{
+    font-size: 1.2em;
+    margin: 0px 0px -10px 0px;
+}
+
+/*Les plus populaires*/
+
+/*Activites*/
+.activites{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.activitesphotos{
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+    "activite1 activite2 activite4 activite5"
+    "activite1 activite3 activite4 activite6";
+    grid-template-rows: repeat(2, 0.5fr);
+    gap: 20px;
+}
+
+.act1, .act2, .act3, .act4, .act5, .act6{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.act1{
+    grid-area: activite1;
+}
+
+.act2{
+    grid-area: activite2;
+}
+
+.act3{
+    grid-area: activite3;
+}
+
+.act4{
+    grid-area: activite4;
+}
+
+.act5{
+    grid-area: activite5;
+}
+
+.act6{
+    grid-area: activite6;
+}
+
+.activitesphotos a footer p{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.activitesphotos a footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: black;
+}
+/*Activites*/
+
+/*Footer*/
+.basdepage{
+    position: absolute;
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.basdepage section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.basdepage section a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+
+/*Footer*/
+
+/*Responsive*/
+
+@media only screen and (max-width: 1000px) {
+    .proposition{
+        flex-wrap: wrap;
+    }
+
+    .HebergMars{
+        width: 100%;
+    }
+
+    .propliens{
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 20px;
+        height: 50%;
+    }
+
+    .PlusPop{
+        width: 100%;
+    }
+
+    #IDPlusPop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .activitesphotos{
+        grid-template-areas:
+        "activite1 activite2 activite3"
+        "activite4 activite5 activite6";
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .proposition{
+        flex-wrap: wrap;
+    }
+
+    .propliens{
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 20px;
+    }
+
+    .HebergMars{
+        height: 50%;
+    }
+
+    #IDPlusPop{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+    .activitesphotos{
+        grid-template-areas:
+        "activite1" 
+        "activite2"
+        "activite3" 
+        "activite4"
+        "activite5" 
+        "activite6"
+    }
+
+    .basdepage{
+        flex-direction: column;
+    }
+    
+    .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .pop{
+        display: flex;
+        flex-direction: column;
+    
+        background-color: white;
+        margin: 0px 20px 20px 20px;  
+        border-radius: 25px;
+        text-decoration: none;
+        color: black;
+        height: 300px;
+    }
+    
+    .pop img{
+        margin: 3% 0px 3% 3%; 
+        width: 94%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+}
