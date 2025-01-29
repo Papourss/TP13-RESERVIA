@@ -63,8 +63,17 @@ header a:hover{
         align-items: center;
         justify-items: center;
     }
-}
 
+    header a{ 
+        border-top: 3px solid white ;
+        border-bottom: 3px solid white ;
+    }
+
+    header a:hover{ 
+        border-top: 3px solid white ;
+        border-bottom: 3px solid rgb(0, 110, 255) ;
+    }
+}
 /* Header */
 
 /* Main Section Recherche */
@@ -154,6 +163,12 @@ header a:hover{
     border: 2px solid rgb(255, 231, 231);
     border-radius: 50px;
     margin: 0px 0px 0px 20px;
+    transition: all 0.4s ease-out;
+}
+
+.categorie article:hover{
+    transform: scale(1.05);
+    color: rgb(0, 110, 255);
 }
 
 .categorie article div{
@@ -167,10 +182,6 @@ header a:hover{
     height: 15px;
     position: relative;
     left: -2px;
-}
-
-.categorie article:hover{
-    color: rgb(0, 110, 255);
 }
 
 .categorie article div i{
@@ -206,6 +217,7 @@ header a:hover{
     color: rgb(0, 110, 255);
 }
 /*Info*/
+
 /*Hebergement Marseille*/
 
 .HebergMars header{
@@ -240,6 +252,7 @@ header a:hover{
 }
 
 .propliens a{
+    box-shadow: 0px 0px 10px rgb(0, 0.5, 0.5, 0.5);;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -249,6 +262,11 @@ header a:hover{
     border-radius: 25px; 
     margin: 0px 10px 0px 10px;  
     max-height: 100%;
+    transition: all 0.5s ease-out;
+}
+
+.propliens a:hover{
+    transform: scale(1.05);
 }
 
 .propliens a img{
@@ -271,14 +289,13 @@ header a:hover{
     font-size: 0.8em;
 }
 
-
 .fa-star {
     color: rgb(202, 202, 202);
 }
 
 .checked {
     color: rgb(0, 110, 255);
-  }
+}
 
 .AfficherPlus{
     position: absolute;
@@ -305,27 +322,21 @@ header a:hover{
     height: 300px;
 }
 
- .pop img{
+.pop img{
     margin: 3% 0px 3% 3%; 
-    width: 70%;
+    width: 40%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-
-
-
-
 .infopop{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    font-size: 0.8em;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-
     margin: 10px;
 }
 
