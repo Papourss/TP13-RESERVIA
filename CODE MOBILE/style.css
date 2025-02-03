@@ -50,30 +50,6 @@ header a:hover{
     border-top: 3px solid rgb(0, 110, 255) ;
 }
 
-@media only screen and (max-width: 630px) {
-    header {
-        width: 100%;
-        max-width: 1400px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-                "logo register  " 
-            "hosting activities";
-        align-items: center;
-        justify-items: center;
-    }
-
-    header a{ 
-        border-top: 3px solid white ;
-        border-bottom: 3px solid white ;
-    }
-
-    header a:hover{ 
-        border-top: 3px solid white ;
-        border-bottom: 3px solid rgb(0, 110, 255) ;
-    }
-}
 /* Header */
 
 /* Main Section Recherche */
@@ -137,19 +113,6 @@ header a:hover{
     align-items: center;
     padding: 20px 0px 20px 0px;
 }
-
-@media only screen and (max-width: 1000px) {
-    .filtres{
-        flex-wrap: wrap;
-    }
-
-    .categorie{
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-}
-
 
 .categorie{
     display: flex;
@@ -234,6 +197,7 @@ header a:hover{
     width: 70%;
     background-color: rgb(242, 242, 242);
     border-radius: 25px;
+    margin-bottom: 40px;
 }
 
 .PlusPop{
@@ -261,7 +225,7 @@ header a:hover{
     background-color: white;
     border-radius: 25px; 
     margin: 0px 10px 0px 10px;  
-    max-height: 100%;
+    height: 90%;
     transition: all 0.5s ease-out;
 }
 
@@ -270,8 +234,8 @@ header a:hover{
 }
 
 .propliens a img{
-    margin: 4% 0px 0px 0px; 
-    width: 92%;
+    margin: 1.5% 0px 0px 0px; 
+    width: 97%;
     height: 50%; 
     object-fit: cover;
     border-top-right-radius: 20px;
@@ -308,6 +272,7 @@ header a:hover{
 /*Hebergement Marseille*/
 
 /*Les plus populaires*/
+
 .PlusPop header{
     padding: 10px 10px 10px 20px;
 }
@@ -319,7 +284,7 @@ header a:hover{
     border-radius: 25px;
     text-decoration: none;
     color: black;
-    height: 300px;
+    height: 100%;
 }
 
 .pop img{
@@ -447,21 +412,41 @@ header a:hover{
 /*Responsive*/
 
 @media only screen and (max-width: 1000px) {
+    
+    /*Filtres*/
+    .filtres{
+        flex-wrap: wrap;
+    }
+
+    .categorie{
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    /*Filtres*/
+
+
     .proposition{
         flex-wrap: wrap;
     }
 
+
+    /*Hebergement Marseille*/
     .HebergMars{
         width: 100%;
+        height: 100%;
+        position: relative;
     }
 
     .propliens{
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(3,1fr);
         row-gap: 20px;
-        height: 50%;
+        height: 100%;
     }
+    /*Hebergement Marseille*/
 
+    /*Les plus populaires*/
     .PlusPop{
         width: 100%;
     }
@@ -470,54 +455,71 @@ header a:hover{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    /*Les plus populaires*/
 
+    /*Activites*/
     .activitesphotos{
         grid-template-areas:
         "activite1 activite2 activite3"
         "activite4 activite5 activite6";
     }
+    /*Activites*/
 }
 
 @media only screen and (max-width: 630px) {
+    /*HEADER*/
+    header {
+        width: 100%;
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+                "logo register  " 
+            "hosting activities";
+        align-items: center;
+        justify-items: center;
+    }
+
+    header a{ 
+        border-top: 3px solid white ;
+        border-bottom: 3px solid white ;
+    }
+
+    header a:hover{ 
+        border-top: 3px solid white ;
+        border-bottom: 3px solid rgb(0, 110, 255) ;
+    }
+    /*HEADER*/
+    /* Main Section Recherche */
+    /* Main Section Recherche */
+    /*Filtres*/
+    /*Filtres*/
+
+
     .proposition{
         flex-wrap: wrap;
     }
 
+    /*Hebergement Marseille*/
     .propliens{
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(3,1fr);
         row-gap: 20px;
+        height: 100%;
     }
 
     .HebergMars{
         height: 50%;
     }
+    /*Hebergement Marseille*/
 
+    /*Les plus populaires*/
     #IDPlusPop{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
 
-    
-    .activitesphotos{
-        grid-template-areas:
-        "activite1" 
-        "activite2"
-        "activite3" 
-        "activite4"
-        "activite5" 
-        "activite6"
-    }
-
-    .basdepage{
-        flex-direction: column;
-    }
-    
-    .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
     .pop{
         display: flex;
         flex-direction: column;
@@ -537,5 +539,29 @@ header a:hover{
         object-fit: cover;
         border-radius: 20px;
     }
+    /*Les plus populaires*/
+
+    /*Activites*/
+    .activitesphotos{
+        grid-template-areas:
+        "activite1" 
+        "activite2"
+        "activite3" 
+        "activite4"
+        "activite5" 
+        "activite6"
+    }
+
+    .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Activites*/
+
     
+    .basdepage{
+        flex-direction: column;
+    }
 }
